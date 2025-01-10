@@ -6,6 +6,7 @@ import { Toaster } from "react-hot-toast";
 const roboto = Roboto({
   subsets: ["latin"],
   weight: ["400", "500", "700", "900"],
+  preload: true,
 });
 
 export default function RootLayout({
