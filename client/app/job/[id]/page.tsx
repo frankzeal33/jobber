@@ -237,7 +237,7 @@ function page() {
             </p>
 
             <div className="flex flex-wrap gap-4">
-              {job.tags.map((tag: string, index: number) => (
+              {job.skills.map((tag: string, index: number) => (
                 <span
                   key={index}
                   className="px-4 py-1 rounded-full text-sm font-medium flex items-center bg-indigo-500/20 text-[#7263f3]"
