@@ -7,7 +7,6 @@ import connect from "./db/connect.js";
 import asyncHandler from "express-async-handler";
 import fs from "fs";
 import User from "./models/UserModel.js";
-import { log } from "console";
 dotenv.config();
 
 const app = express();
@@ -26,14 +25,15 @@ const config = {
     login: "/login",
   },
 
-  // session: {
-  //   absoluteDuration: 30 * 24 * 60 * 60 * 1000, // 30 days
-  //   cookie: {
-  //     domain: process.env.BASE_URL_WITHOUT_HTTP,
-  //     // secure: true,
-  //     sameSite: "None",
-  //   },
-  // },
+  // in production
+  session: {
+    absoluteDuration: 30 * 24 * 60 * 60 * 1000, // 30 days
+    cookie: {
+      domain: process.env.BASE_URL_WITHOUT_HTTP,
+      secure: true,
+      sameSite: "None",
+    },
+  },
 };
 
 app.use(
