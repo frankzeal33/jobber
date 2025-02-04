@@ -26,14 +26,14 @@ const config = {
   },
 
   // in production
-  session: {
-    absoluteDuration: 30 * 24 * 60 * 60 * 1000, // 30 days
-    cookie: {
-      domain: process.env.BASE_URL_WITHOUT_HTTP,
-      secure: true,
-      sameSite: "None",
-    },
-  },
+  // session: {
+  //   absoluteDuration: 30 * 24 * 60 * 60 * 1000, // 30 days
+  //   cookie: {
+  //     domain: process.env.BASE_URL_WITHOUT_HTTP,
+  //     secure: true,
+  //     sameSite: "None",
+  //   },
+  // },
 };
 
 app.use(

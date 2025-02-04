@@ -71,7 +71,7 @@ export default function Home() {
       <Header />
 
       <section className="py-20 bg-gradient-to-b from-[#d7dedc] to-[#7263f3]/5 text-primary-foreground">
-        <div className="container mx-auto px-4 text-center text-black">
+        <div className="container mx-auto px-2 text-center text-black">
           <h1 className="text-4xl text-[#7263f3] md:text-5xl font-bold mb-6">
             Find Your Dream Job or Perfect Candidate
           </h1>
@@ -93,10 +93,10 @@ export default function Home() {
       </section>
 
       <section className="py-20 bg-[#f0f5fa]">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-2">
           <h2 className="text-3xl font-bold text-center mb-12">
             Why Choose{" "}
-            <span className="text-[#7263f3] font-extrabold">JobFindr</span>
+            <span className="text-[#7263f3] font-extrabold">Jobber</span>
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -146,7 +146,7 @@ export default function Home() {
       </section>
 
       <section className="py-[7rem] bg-[#d7dedc]">
-        <div className="container mx-auto px-4 text-center">
+        <div className="container mx-auto px-2 text-center">
           <h2 className="text-3xl font-bold mb-8">Ready to Get Started?</h2>
 
           <div className="flex flex-col md:flex-row justify-center gap-4">
